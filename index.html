@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aim Dash — One-Page Fun Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Aim Dash</h1>
+        <div class="muted">Click the target as fast as you can. 30 seconds. How high can you score?</div>
+      </div>
+    </header>
+
+    <div class="panel">
+      <div class="topbar">
+        <div class="stats">
+          <div class="pill"><span>Score:</span> <span class="value" id="score">0</span></div>
+          <div class="pill good"><span>Best:</span> <span class="value" id="best">0</span></div>
+          <div class="pill"><span>Time:</span> <span class="value" id="time">30.0s</span></div>
+          <div class="pill"><span>Accuracy:</span> <span class="value" id="accuracy">100%</span></div>
+          <div class="pill"><span>Avg. reaction:</span> <span class="value" id="avg">—</span></div>
+        </div>
+        <div class="controls">
+          <select id="difficulty" title="Difficulty">
+            <option value="easy">Easy</option>
+            <option value="normal" selected>Normal</option>
+            <option value="hard">Hard</option>
+            <option value="insane">Insane</option>
+          </select>
+          <button id="startBtn" class="primary">Start</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </div>
+
+      <div class="arena" id="arena">
+        <div class="message" id="overlay">
+          <h2>Ready to dash?</h2>
+          <p>Choose a difficulty, hit Start, and chase the glowing target. Miss less, click faster.</p>
+          <button id="overlayStart" class="primary">Start game</button>
+        </div>
+
+        <div class="target" id="target" style="display:none;">
+          <div class="crosshair"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Pro tip: keep your cursor near the center and anticipate movement. Momentum favors patience more than panic.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
