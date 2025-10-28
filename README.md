@@ -67,9 +67,3 @@ cd aim-dash
 
 
 ---
-
-Would you like me to add:
-- ✅ a **screenshot preview section** (with image placeholder), and  
-- ✅ **badges** (like “Built with JavaScript”, “Deployed on Netlify”, etc.)  
-
-for a more **GitHub-ready** look?
